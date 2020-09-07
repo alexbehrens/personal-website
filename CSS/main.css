@@ -11,23 +11,14 @@ header {
 
 }
 
-@media screen and (max-width: 600px) {
-  .scramble {
-    font-size: 2vw;
-    
-  }
-  body {
-    font-size: 15px;
-        
-  }
-}
+
 
 
 body {
     margin: 0;
     font-family: 'Source Code Pro';
     background-color: white;
-    font-size: 2vw;
+    font-size: 5vw;
 }
 
 
