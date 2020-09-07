@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
 header {
     color: black;
     background-color: white;
@@ -15,7 +15,7 @@ header {
 
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Source Code Pro';
     background-color: white;
 }
 
@@ -28,7 +28,14 @@ body {
     margin: 0 auto;
     text-align: center;
     margin-top: 15px;
+    box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
 }
+
+
+
 .scramble {
     margin-left: auto;
     margin-right: auto;
@@ -38,7 +45,6 @@ body {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
 }
 
 
@@ -69,7 +75,6 @@ body {
 .external-links {
     text-align: center;
     padding-top: 2em;
-       
 }
 
 .rect {
@@ -82,6 +87,10 @@ body {
     margin-right: auto;
     margin: 0 auto;
     padding-top: 2em;
+    box-shadow: 10px 10px 5px #ccc;
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px rgba(204, 204, 204, 0.486);
+    -khtml-box-shadow: 10px 10px 5px #ccc;
     
 
 
