@@ -29,22 +29,16 @@ body {
     text-align: center;
     margin-top: 15px;
 }
-
-#name {
-    font-style: bold;
-    text-align: center;
-    font-size: 3em;
-    display: inline
-
-}
-
 .scramble {
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     text-align: center;
     padding: 10em,1.2em;
+    display: inline;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
 }
 
 
