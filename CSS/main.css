@@ -12,7 +12,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  .scramble text {
+  .scramble {
     font-size: 2vw;
     
   }
