@@ -34,6 +34,8 @@ body {
     font-style: bold;
     text-align: center;
     font-size: 3em;
+    display: inline
+
 }
 
 .scramble {
