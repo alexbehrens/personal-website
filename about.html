@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB</title>
+    <link rel="shortcut icon" href="images/aperture.ico" >
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+
+<header>
+      <h1 id="text"></h1>
+    <script src="./scrambling-text.js"></script>
+    <script>
+      const TEXTS = [
+        'Contact',
+        'Alex Behrens',
+      ];
+
+      const scrambler = new window.Scrambler();
+      const handleScramble = (text) => {
+        document.getElementById('text').innerHTML = text;
+      }
+
+      let i = 0;
+      function printText() {
+        scrambler.scramble(TEXTS[i % TEXTS.length], handleScramble); 
+        setTimeout(printText, 5000);
+        i++;
+      }
+      printText();
+    </script>
+
+    <a href="https://behrens.space/">
+    <img src="images/icon.jpg" id="icon" alt="icon">
+    </a>
+    
+
+
+  </div>
+</header>
+
+<br>
+<body>
+  <div class="cons">
+  <br>
+  <h2 text-align='center'>Under Construction</h2>
+  <img class="image" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbestanimations.com%2FComputers%2Ffunny-computer-animated-gif-29.gif&f=1&nofb=1" alt="" width="120" height="120">
+  </div>
+
+</body>
+</html>
