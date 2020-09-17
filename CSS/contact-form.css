@@ -123,8 +123,8 @@ label.fcf-label {
 
 .fcf-btn-primary {
     color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: rgba(155, 105, 179, 0.582);
+    border-color: rgba(155, 105, 179, 0.582);
 }
 
 .fcf-btn-primary:hover {

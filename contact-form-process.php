@@ -27,7 +27,7 @@ if (isset($_POST['Email'])) {
     $email = $_POST['Email']; // required
     $message = $_POST['Message']; // required
 
-    $error_message = "";
+    $error_message = "Debugging?";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
 
     if (!preg_match($email_exp, $email)) {
