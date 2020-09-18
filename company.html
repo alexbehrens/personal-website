@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB</title>
+    <link rel="shortcut icon" href="images/icon.ico" >
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+
+<header>
+      <h1 style="color: white;" id="text"></h1>
+    <script src="./scrambling-text.js"></script>
+    <script>
+      const TEXTS = [
+        'Stealth Startup',
+        'Its probably not vaporware',
+      ];
+
+      const scrambler = new window.Scrambler();
+      const handleScramble = (text) => {
+        document.getElementById('text').innerHTML = text;
+      }
+
+      let i = 0;
+      function printText() {
+        scrambler.scramble(TEXTS[i % TEXTS.length], handleScramble); 
+        setTimeout(printText, 5000);
+        i++;
+      }
+      printText();
+    </script>
+    <br>
+    <a href="https://behrens.space/">
+    <img src="images/aperture.ico" >
+    </a>
+    
+
+
+  </div>
+</header>
+
+
+<br>
+<br>
+<body class="container" style="background-image: url('images/vape.gif');">
+
+
+
+ <div class="companyblock">
+  <form>
+    <h2 style="color: white;">Password:</h2>
+    <br>
+    <input class="fcf-input-group" type="password" id="pswd">
+    <br>
+    <br>
+    <input class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" type="button" value="Submit" onclick="checkPswd();" />
+</form>
+<br>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "wario";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Wrong.");
+        }
+    }
+</script>
+</div>
+</body>
+</html>

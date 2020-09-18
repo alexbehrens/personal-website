@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB</title>
+    <link rel="shortcut icon" href="images/icon.ico" >
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+
+<header>
+      <h1 style="color: white;" id="text"></h1>
+    <script src="./scrambling-text.js"></script>
+    <script>
+      const TEXTS = [
+        'Sorry',
+        ':/',
+      ];
+
+      const scrambler = new window.Scrambler();
+      const handleScramble = (text) => {
+        document.getElementById('text').innerHTML = text;
+      }
+
+      let i = 0;
+      function printText() {
+        scrambler.scramble(TEXTS[i % TEXTS.length], handleScramble); 
+        setTimeout(printText, 5000);
+        i++;
+      }
+      printText();
+    </script>
+
+    
+
+
+  </div>
+</header>
+
+
+<body class="container" style="background-image: url('images/space.gif');">
+
+
+
+    <div class="companyblock">
+        <a href="https://behrens.space/">
+        <img src="images/oops.gif">
+        <p style="color: white;">Check back later.</p>
+        </a>
+    </div>
+</body>
+</html>
