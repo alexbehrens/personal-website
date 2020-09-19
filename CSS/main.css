@@ -304,7 +304,7 @@ body {
 .rect {
     height: 100%;
     width: 350px;
-    background: rgba(151, 156, 185, 0.411);
+    background: rgba(223, 238, 252, 0.774);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -320,7 +320,7 @@ body {
 .rect2 {
     height: 100%;
     width: 350px;
-    background: rgba(182, 151, 207, 0.322);
+    background: rgba(158, 36, 206, 0.11);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -405,7 +405,7 @@ body {
 .aboutblock {
     height: 100%;
     width: 350px;
-    background: rgba(36, 127, 206, 0.11);
+    background: rgba(223, 238, 252, 0.774);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -445,12 +445,15 @@ body {
 
 .container {
     background-position: center;
-    background-size: 100% 100%;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
 }
 
 .container img{
     opacity: 0.3;
 }
+
+/* company.html */
 
 .companyblock {
     height: 100%;
@@ -466,6 +469,13 @@ body {
     padding-bottom: 5px;
     padding-right: 1em;
     padding-left: 1em;
+}
 
+.backgroundc {
+    background-position: center;
+    background-size: 200% 200%;
+}
 
+.backgroundc img{
+    opacity: 0.3;
 }
