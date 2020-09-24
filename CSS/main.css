@@ -231,6 +231,13 @@ header {
     .scramble {
         font-size: 12px;
     }
+    .titleblock {
+        width: 300px;
+    }
+    .projectblock {
+        width: 250px;
+
+    }
   }
 
 
