@@ -17,7 +17,7 @@
     <script>
       const TEXTS = [
         'Alex Behrens',
-        'is working @ Atom Limbs.',
+        'is looking for a job.',
       ];
 
       const scrambler = new window.Scrambler();
@@ -27,17 +27,42 @@
 
       let i = 0;
       function printText() {
-        scrambler.scramble(TEXTS[i % TEXTS.length], handleScramble);
+        scrambler.scramble(TEXTS[i % TEXTS.length], handleScramble); 
         setTimeout(printText, 5000);
         i++;
       }
       printText();
     </script>
 
+  
+  <a href="index.html">
+  <img src="images/icon.jpg" id="icon" alt="icon" class="icon">
+  </a>
 
   <a href="index.html">
-  <img src="images/icon.jpg" id="icon" alt="icon">
+    <img src="images/icon.jpg" class="icon2">
   </a>
+
+  <script src="jquery-3.0.0.js"></script>
+
+  <p class="text">Home</p>
+
+    <script type = "text/javascript" language = "javascript">
+      $(document).ready(function() {
+
+        $('.icon2').hover(
+    
+            function () {
+              $(this).text("Hello world!");
+            }, 
+    
+            function () {
+              $(this).text("Hello world!");
+            }
+        );
+    
+      });
+  </script>
 
   </div>
 </header>
@@ -67,16 +92,16 @@
         </a>
         <a href="https://github.com/alexbehrens">
           <img src="images/git.png" alt="text describing the image"><h3>Github</h3>
-        </a>
+        </a>        
         <a href="https://medium.com/@alexanderbbehrens">
           <img src="images/medium.png" alt="text describing the image"><h3>Medium</h3>
-        </a>
+        </a>        
         <a href="https://www.instagram.com/behrphoto/">
           <img src="images/insta.png" alt="text describing the image"><h3>Instagram</h3>
-        </a>
+        </a>        
         <a href="https://twitter.com/axbehrens">
           <img src="images/twit.png" alt="text describing the image"><h3>Twitter</h3>
-        </a>
+        </a>        
       </div>
     </div>
 
