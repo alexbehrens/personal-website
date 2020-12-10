@@ -6,6 +6,14 @@
     <title>AB</title>
     <link rel="shortcut icon" href="images/icon.ico" >
     <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QH0RD12XXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QH0RD12XXD');
+    </script>
 </head>
 
 <header>
@@ -14,7 +22,7 @@
     <script>
       const TEXTS = [
         'Stealth Startup',
-        'Its probably not vaporware',
+        'vaporware not vaporware',
       ];
 
       const scrambler = new window.Scrambler();
@@ -57,19 +65,8 @@
     <input class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block" type="button" value="Submit" onclick="checkPswd();" />
 </form>
 <br>
-<!--Function to check password the already set password is admin-->
-<script type="text/javascript">
-    function checkPswd() {
-        var confirmPassword = "wario";
-        var password = document.getElementById("pswd").value;
-        if (password == confirmPassword) {
-             window.location="welcome.html";
-        }
-        else{
-            alert("Wrong.");
-        }
-    }
-</script>
+<script src="js/checkPswd.js"></script>
+
 </div>
 </body>
 </html>
