@@ -265,7 +265,17 @@ body {
       -khtml-box-shadow: 10px 10px 5px #ccc;
 }
 
-
+#icon2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 130px;
+}
 
 .scramble {
     margin-left: auto;
