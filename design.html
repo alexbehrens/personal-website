@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB</title>
+    <link rel="shortcut icon" href="images/icon.ico" >
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QH0RD12XXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-QH0RD12XXD');
+    </script>
+</head>
+
+<header>
+    <h1 id="text"></h1>
+    <script src="./scrambling-text.js"></script>
+    <script>
+      const TEXTS = [
+        'Projects',
+        'Alex Behrens',
+      ];
+
+      const scrambler = new window.Scrambler();
+      const handleScramble = (text) => {
+        document.getElementById('text').innerHTML = text;
+      }
+
+      let i = 0;
+      function printText() {
+        scrambler.scramble(TEXTS[i % TEXTS.length], handleScramble);
+        setTimeout(printText, 5000);
+        i++;
+      }
+      printText();
+    </script>
+
+    <a href="index.html">
+    <img src="images/icon3.png" id="icon" alt="icon">
+    </a>
+
+
+
+</header>
+<br>
+
+
+  <div class="projectblock">
+    <a href="d2.html">
+    <br>
+    <img src="images/folder.png">
+    <h2>Mockups and Commissioned Work</h2>
+    <br>
+    </a>
+    </div>
+
+
+  <div class="projectblock">
+  <a href="d1.html">
+  <br>
+  <img src="images/folder.png">
+  <h2>Photography and Art</h2>
+  <br>
+  </a>
+  </div>
+
+
+
+</div>
+</body>
+</html>
