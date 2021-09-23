@@ -252,17 +252,15 @@ body {
 
 #icon {
     border-radius: 100%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+    transform: scaleX(-1);
     margin-left: auto;
     margin-right: auto;
     margin: 0 auto;
     text-align: center;
     margin-top: 15px;
-    box-shadow: 10px 10px 5px #ccc;
-      -moz-box-shadow: 10px 10px 5px #ccc;
-      -webkit-box-shadow: 10px 10px 5px #ccc;
-      -khtml-box-shadow: 10px 10px 5px #ccc;
+
 }
 
 #icon2 {
