@@ -332,6 +332,16 @@ body {
     margin-bottom: 5em;
 }
 
+.rect img{
+    height: 100%;
+    width: 100px;
+  }
+
+.rect2 img{
+    height: 100%;
+    width: 75px;
+  }
+
 .rect2 {
     height: 100%;
     width: 350px;
