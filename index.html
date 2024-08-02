@@ -1,108 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en" class="dark">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AB</title>
-    <link rel="shortcut icon" href="images/icon.ico" >
-    <link rel="stylesheet" type="text/css" href="CSS/main.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QH0RD12XXD"></script>
+    <link rel="icon" href="/globe.ico" type="image/x-icon">
+    <title>Alex Behrens - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-QH0RD12XXD');
+        // Apply the saved theme immediately
+        (function() {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.classList.toggle('light', savedTheme === 'light');
+            }
+        })();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
 </head>
-
-
 <body>
-<header>
-    <div class="scramble">
-      <h1 id="text"></h1>
-    <script src="./scrambling-text.js"></script>
-    <script>
-      var str = "Hello World!";
-      var result = str.fontcolor("green");
+    <div class="container">
+        <div id="globe"></div>
+            <h1>Alex Behrens</h1>
+            <p class="subtitle">GTM & Dev </p>
+    
+            
+            <div class="content">
 
-      const TEXTS = [
-        'Alex Behrens',
-        'works at',
-        'OpenZeppelin.',
-      ];
-
-
-      const scrambler = new window.Scrambler();
-      const handleScramble = (text) => {
-        document.getElementById('text').innerHTML = text;
-      }
-
-      let i = 0;
-      function printText() {
-        scrambler.scramble(TEXTS[i % TEXTS.length], handleScramble);
-        setTimeout(printText, 5000);
-        i++;
-      }
-      printText();
-    </script>
-
-
-  <a href="index.html">
-  <!--<img src="images/icon.jpg" id="icon" alt="icon"> -->
-  <!--<iframe src='https://my.spline.design/homespace-8f19a72ebe6cb3ac3ede41dcc522c280/' frameborder='0' style="width:100%; height:200px"></iframe> -->
-  <!--<iframe src='https://my.spline.design/untitled-489bfbcfd249d93afbecd7217d4aa63b/' frameborder='0' style="width:100%; height:200px"></iframe> -->
-<iframe src='https://my.spline.design/primitivescopy-5f3116a25914a1611bd0810c9d0ea46a/' frameborder='0' width='100%' height='100%'></iframe>
-  </a>
-
-  </div>
-</header>
-
-
-  <div class="external-links">
-    <div class='rect'>
-      <a href="contact.html">
-        <img src="images/contact.png" alt="text describing the image"><h3>Contact</h3>
-      </a>
-      <a href="projects.html">
-        <img src="images/rocket.png" alt="text describing the image"><h3>Projects</h3>
-      </a>
-      <a href="https://standardresume.co/r/iqBv5do0E3XvR3lGR724Z">
-        <img src="images/resume.svg" alt="text describing the image"><h3>Resume</h3>
-      </a>
-        <!--
-      <a href="placeholder.html">
-        <img src="images/hand.svg" alt="text describing the image"><h3>About</h3>
-      </a>
-        -->
-
-    </div>
+            <div class="section">
+                <h2><a href="contact.html">Contact</a></h2>
+            </div>
+            
+            <div class="section">
+                <h2><a href="resume.html">Resume</a></h2>
+            </div>
+            
+            <div class="section">
+                <h2><a href="projects.html">Projects</a></h2>
+            </div>
+            
+        </div>
     </div>
 
-    <div class="external-links">
-      <div class='rect2'>
-        <a href="https://twitter.com/axbehrens">
-          <img src="images/twit.png" alt="text describing the image"><h3>Twitter</h3>
-        </a>
-        <a href="https://github.com/alexbehrens">
-          <img src="images/git.png" alt="text describing the image"><h3>Github</h3>
-        </a>
-        <a href="https://www.linkedin.com/in/alex-behrens-5a6299168/">
-          <img src="images/link.png" alt="text describing the image"><h3>LinkedIn</h3>
-        </a>
-        <!--
-        <a href="https://medium.com/@alexanderbbehrens">
-          <img src="images/medium.png" alt="text describing the image"><h3>Medium</h3>
-        </a>
-        -->
-        <a href="https://www.instagram.com/behrphoto/">
-          <img src="images/insta.png" alt="text describing the image"><h3>Instagram</h3>
-        </a>
-
-      </div>
+    <div class="theme-toggle-wrapper">
+        <label class="theme-toggle" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round">
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </div>
+        </label>
     </div>
 
-
-
+    <script src="script.js"></script>
 </body>
 </html>

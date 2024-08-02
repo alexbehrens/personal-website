@@ -1,0 +1,199 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #00BFFF;
+    --globe-color: #00BFFF;
+    --divider-color: #ffffff; /* Divider color for dark mode */
+
+}
+
+.light {
+    --bg-color: #FFFFFF;
+    --text-color: #000000;
+    --globe-color: #1E90FF;
+    --divider-color: #1E90FF; /* Divider color for light mode */
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Berkeley Mono Trial', monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+.container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;    /* Center the content vertically, if desired */
+}
+
+.content {
+    text-align: left;        /* Left-align the text inside .content */
+    max-width: 600px;        /* Limit the maximum width of the content */
+    padding: 20px;           /* Add some padding for better spacing */
+    box-sizing: border-box;  /* Include padding in the element's total width and height */
+    margin: 0 auto;          /* Center the .content div */    
+    
+}
+
+
+#globe {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    font-size: 1em;
+    margin-bottom: 40px;
+    color: #00BFFF;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.theme-toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.theme-toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #414141;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.sun, .moon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 7px;
+    transition: .4s;
+}
+
+.sun {
+    left: 7px;
+    fill: #FFD700;
+    stroke: #FFD700;
+}
+
+.moon {
+    right: 7px;
+    fill: #F4F6F0;
+    stroke: #F4F6F0;
+}
+
+input:checked + .slider .sun {
+    transform: translateX(26px);
+}
+
+input:checked + .slider .moon {
+    transform: translateX(-26px);
+}
+
+/* Base styles for dark mode */
+.email-hidden {
+    background-color: #ffffff; /* Block color for dark mode */
+    color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+.email-hidden:hover {
+    background-color: transparent;
+    color: #ffffff; /* Text color for dark mode */
+}
+
+/* Override styles for light mode */
+.light .email-hidden {
+    background-color: #000000; /* Block color for light mode */
+    color: transparent;
+}
+.light .email-hidden:hover {
+    background-color: transparent;
+    color: #000000; /* Text color for light mode */
+}
+
+a {
+    color: var(--default-color);
+    text-decoration: none; /* Remove underline */
+}
+
+/* Add any additional styles for hover, visited, etc. */
+a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+    color: #0080ff;
+}
+
+.divider {
+    border-top: 2px solid var(--divider-color); /* Use the divider color variable */
+    margin: 20px 0;
+}
